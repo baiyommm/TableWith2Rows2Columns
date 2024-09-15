@@ -1,14 +1,21 @@
-//
-//  main.cpp
-//  TableWith2Rows2Columns
-//
-//  Created by Chatchapong Thuaypha on 9/15/24.
-//
-
 #include <iostream>
+#include <iomanip>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+int main() {
+  
+    // Print the header row
+    cout << left << setw(10) << "Course"
+         << right << setw(10) << "Students" << endl;
+
+    // Print the row for C++
+    cout << left << setw(10) << "C++"
+         << right << setw(10) << 100 << endl;
+
+    // Print the row for JavaScript
+    cout << left << setw(10) << "JavaScript"
+         << right << setw(10) << 50 << endl;
+
     return 0;
 }
